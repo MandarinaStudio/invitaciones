@@ -1,0 +1,56 @@
+.overlay{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.45);
+
+    gap:20px;
+
+}
+
+.overlay h1{
+
+    font-size:3rem;
+
+}
+
+.overlay p{
+
+    font-size:1.2rem;
+
+}
+
+button{
+
+    border:none;
+
+    padding:18px 40px;
+
+    border-radius:999px;
+
+    background:var(--color-primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
