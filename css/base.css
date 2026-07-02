@@ -19,3 +19,8 @@ body{
     color:white;
 
 }
+body.lock{
+
+    overflow:hidden;
+
+}

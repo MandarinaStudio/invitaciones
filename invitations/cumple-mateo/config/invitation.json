@@ -1,7 +1,6 @@
 {
-    "title":"Mateo cumple 5 años",
-
-    "subtitle":"15 de Agosto • 3:00 PM",
-
-    "hero":"cover.jpg"
+    "title": "Mateo cumple 5 años",
+    "subtitle": "15 de Agosto • 3:00 PM",
+    "hero": "cover.jpg",
+    "music": "music.mp3"
 }

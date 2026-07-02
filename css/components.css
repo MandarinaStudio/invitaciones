@@ -90,3 +90,29 @@ transform:translateY(0px);
     }
 
 }
+
+.music-button{
+
+    position:absolute;
+
+    top:25px;
+    right:25px;
+
+    width:54px;
+    height:54px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.25);
+
+    backdrop-filter:blur(10px);
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
