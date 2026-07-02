@@ -54,3 +54,39 @@ button:hover{
     transform:scale(1.05);
 
 }
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(12px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+@keyframes heroZoom {
+
+    from {
+
+        transform: scale(1);
+
+    }
+
+    to {
+
+        transform: scale(1.08);
+
+    }
+
+}

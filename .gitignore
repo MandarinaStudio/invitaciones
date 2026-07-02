@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Node (por si algún día lo usamos)
+node_modules/
+
+# Archivos temporales
+*.tmp
