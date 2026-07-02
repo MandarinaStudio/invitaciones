@@ -1,7 +1,13 @@
 {
-    "title":"Mateo cumple 5 años",
+    "title": "Mateo cumple 5 años",
+    "subtitle": "15 de Agosto • 3:00 PM",
+    "hero": "cover.jpg",
+    "music": "music.mp3",
+    "eventDate": "2026-08-15T15:00:00",
 
-    "subtitle":"15 de Agosto • 3:00 PM",
-
-    "hero":"cover.jpg"
+    "venue": {
+        "name": "Salón Los Jardines",
+        "address": "San José, Costa Rica",
+        "maps": "https://maps.google.com"
+    }
 }

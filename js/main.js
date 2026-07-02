@@ -20,6 +20,8 @@ async function loadInvitation() {
 
         console.error(error);
 
+        return null;
+
     }
 
 }
@@ -28,14 +30,9 @@ async function init() {
 
     document.body.classList.add("lock");
 
+    invitation = await loadInvitation();
 
-
-invitation = await loadInvitation();
-
-if (!invitation) return;
-
-console.log("Invitación cargada:", invitation);
-console.log("Música:", invitation.music);
+    if (!invitation) return;
 
     // Welcome
 
@@ -63,8 +60,23 @@ console.log("Música:", invitation.music);
 
     const music = document.getElementById("bgMusic");
 
-music.src =
-    `invitations/${slug}/audio/music.mp3`;
+    music.src =
+        `invitations/${slug}/audio/${invitation.music}`;
+
+    // Detalles
+
+    document.getElementById("venueName").textContent =
+        invitation.venue.name;
+
+    document.getElementById("venueAddress").textContent =
+        invitation.venue.address;
+
+    document.getElementById("mapsButton").href =
+        invitation.venue.maps;
+
+    // Countdown
+
+    startCountdown(invitation.eventDate);
 
 }
 
@@ -90,7 +102,9 @@ function enterInvitation() {
 
         document.body.classList.remove("lock");
 
-        hero.classList.add("active");
+       hero.style.display = "flex";
+hero.classList.add("active");
+document.getElementById("details").style.display = "block";
 
         music.volume = 0.35;
 
@@ -127,3 +141,61 @@ musicButton.addEventListener("click", () => {
     }
 
 });
+
+function startCountdown(eventDate){
+
+    const days = document.getElementById("days");
+    const hours = document.getElementById("hours");
+    const minutes = document.getElementById("minutes");
+    const seconds = document.getElementById("seconds");
+
+    function update(){
+
+        const now = new Date().getTime();
+
+        const target = new Date(eventDate).getTime();
+
+        const difference = target - now;
+
+        if(difference <= 0){
+
+            days.textContent = "00";
+            hours.textContent = "00";
+            minutes.textContent = "00";
+            seconds.textContent = "00";
+
+            clearInterval(interval);
+
+            return;
+
+        }
+
+        const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+        const h = Math.floor(
+            (difference % (1000 * 60 * 60 * 24)) /
+            (1000 * 60 * 60)
+        );
+
+        const m = Math.floor(
+            (difference % (1000 * 60 * 60)) /
+            (1000 * 60)
+        );
+
+        const s = Math.floor(
+            (difference % (1000 * 60)) /
+            1000
+        );
+
+        days.textContent = String(d).padStart(2, "0");
+        hours.textContent = String(h).padStart(2, "0");
+        minutes.textContent = String(m).padStart(2, "0");
+        seconds.textContent = String(s).padStart(2, "0");
+
+    }
+
+    update();
+
+    const interval = setInterval(update, 1000);
+
+}
