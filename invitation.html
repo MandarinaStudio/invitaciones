@@ -1,138 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>MIE - Mandarina Invites Engine</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
 
-</head>
-
-<body>
-
-<div id="app">
-
-    <section id="welcome">
-
+  <body>
+    <div id="app">
+      <section id="welcome">
         <div class="overlay">
+          <h1 id="eventTitle">Cargando...</h1>
 
-            <h1 id="eventTitle">Cargando...</h1>
+          <p id="eventSubtitle"></p>
 
-            <p id="eventSubtitle"></p>
-
-            <button id="enterButton">
-                Abrir invitación
-            </button>
-
+          <button id="enterButton">Abrir invitación</button>
         </div>
+      </section>
 
-    </section>
-
-
-    <section id="hero">
-        <button id="musicButton" class="music-button">
-
-    🔊
-
-</button>
+      <section id="hero">
+        <button id="musicButton" class="music-button">🔊</button>
 
         <div class="hero-overlay">
-
           <h2 id="heroTitle"></h2>
 
           <p id="heroDate"></p>
 
           <section class="countdown">
+            <div class="countdown-item">
+              <span id="days">00</span>
 
-    <div class="countdown-item">
-
-        <span id="days">00</span>
-
-        <small>Días</small>
-
-    </div>
-
-    <div class="countdown-item">
-
-        <span id="hours">00</span>
-
-        <small>Horas</small>
-
-    </div>
-
-    <div class="countdown-item">
-
-        <span id="minutes">00</span>
-
-        <small>Minutos</small>
-
-    </div>
-
-    <div class="countdown-item">
-
-        <span id="seconds">00</span>
-
-        <small>Segundos</small>
-
-    </div>
-
-</section>
-
-            <div class="scroll-indicator">
-
-                ↓
-
+              <small>Días</small>
             </div>
 
+            <div class="countdown-item">
+              <span id="hours">00</span>
+
+              <small>Horas</small>
+            </div>
+
+            <div class="countdown-item">
+              <span id="minutes">00</span>
+
+              <small>Minutos</small>
+            </div>
+
+            <div class="countdown-item">
+              <span id="seconds">00</span>
+
+              <small>Segundos</small>
+            </div>
+          </section>
+
+          <div class="scroll-indicator">↓</div>
         </div>
+      </section>
 
-    </section>
+      <section id="details">
+        <div class="container">
+          <h2>Detalles del Evento</h2>
 
-<section id="details">
-
-    <div class="container">
-
-        <h2>Detalles del Evento</h2>
-
-        <div class="detail-card">
-
+          <div class="detail-card">
             <h3 id="venueName"></h3>
 
             <p id="venueAddress"></p>
 
-            <a
-                id="mapsButton"
-                class="primary-button"
-                target="_blank">
-
-                Cómo llegar
-
+            <a id="mapsButton" class="primary-button" target="_blank">
+              Cómo llegar
             </a>
+          </div>
+        </div>
+      </section>
+      <section id="dressCode">
+        <div class="container">
+          <h2>Dress Code</h2>
+
+          <div class="detail-card">
+            <h3 id="dressTitle"></h3>
+
+            <p id="dressDescription"></p>
+          </div>
+        </div>
+      </section>
+      <section id="activities">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            ¡Diversión garantizada!
+        </h2>
+
+        <div id="activitiesGrid" class="activities-grid">
 
         </div>
 
     </div>
 
 </section>
+    </div>
 
-</div>
-
-<script src="js/main.js"></script>
-<audio id="bgMusic" loop></audio>
-
-</body>
-
+    <script src="js/main.js"></script>
+    <audio id="bgMusic" loop></audio>
+  </body>
 </html>

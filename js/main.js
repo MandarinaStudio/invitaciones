@@ -11,7 +11,9 @@ async function loadInvitation() {
         );
 
         if (!response.ok) {
+
             throw new Error("No se encontró la invitación.");
+
         }
 
         return await response.json();
@@ -58,7 +60,8 @@ async function init() {
 
     // Música
 
-    const music = document.getElementById("bgMusic");
+    const music =
+        document.getElementById("bgMusic");
 
     music.src =
         `invitations/${slug}/audio/${invitation.music}`;
@@ -74,6 +77,47 @@ async function init() {
     document.getElementById("mapsButton").href =
         invitation.venue.maps;
 
+    // Dress Code
+
+    document.getElementById("dressTitle").textContent =
+        invitation.dressCode.title;
+
+    document.getElementById("dressDescription").textContent =
+        invitation.dressCode.description;
+
+    // Actividades
+
+    const activitiesGrid =
+        document.getElementById("activitiesGrid");
+
+    activitiesGrid.innerHTML = "";
+
+    const icons = {
+
+        "Inflable":"🏰",
+        "Pintacaritas":"🎨",
+        "Pizza":"🍕",
+        "Piñata":"🪅",
+        "Pastel":"🎂"
+
+    };
+
+    invitation.activities.forEach(activity => {
+
+        activitiesGrid.innerHTML += `
+
+            <div class="activity-card">
+
+                <span>${icons[activity] || "🎉"}</span>
+
+                <h3>${activity}</h3>
+
+            </div>
+
+        `;
+
+    });
+
     // Countdown
 
     startCountdown(invitation.eventDate);
@@ -88,11 +132,14 @@ document
 
 function enterInvitation() {
 
-    const welcome = document.getElementById("welcome");
+    const welcome =
+        document.getElementById("welcome");
 
-    const hero = document.getElementById("hero");
+    const hero =
+        document.getElementById("hero");
 
-    const music = document.getElementById("bgMusic");
+    const music =
+        document.getElementById("bgMusic");
 
     welcome.classList.add("fade-out");
 
@@ -102,9 +149,18 @@ function enterInvitation() {
 
         document.body.classList.remove("lock");
 
-       hero.style.display = "flex";
-hero.classList.add("active");
-document.getElementById("details").style.display = "block";
+        hero.style.display = "flex";
+
+        hero.classList.add("active");
+
+        document.getElementById("details").style.display =
+            "block";
+
+        document.getElementById("dressCode").style.display =
+            "block";
+
+        document.getElementById("activities").style.display =
+            "block";
 
         music.volume = 0.35;
 
@@ -144,18 +200,27 @@ musicButton.addEventListener("click", () => {
 
 function startCountdown(eventDate){
 
-    const days = document.getElementById("days");
-    const hours = document.getElementById("hours");
-    const minutes = document.getElementById("minutes");
-    const seconds = document.getElementById("seconds");
+    const days =
+        document.getElementById("days");
+
+    const hours =
+        document.getElementById("hours");
+
+    const minutes =
+        document.getElementById("minutes");
+
+    const seconds =
+        document.getElementById("seconds");
 
     function update(){
 
         const now = new Date().getTime();
 
-        const target = new Date(eventDate).getTime();
+        const target =
+            new Date(eventDate).getTime();
 
-        const difference = target - now;
+        const difference =
+            target - now;
 
         if(difference <= 0){
 
@@ -170,32 +235,42 @@ function startCountdown(eventDate){
 
         }
 
-        const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const d = Math.floor(
+            difference / (1000 * 60 * 60 * 24)
+        );
 
         const h = Math.floor(
-            (difference % (1000 * 60 * 60 * 24)) /
-            (1000 * 60 * 60)
+            (difference % (1000 * 60 * 60 * 24))
+            / (1000 * 60 * 60)
         );
 
         const m = Math.floor(
-            (difference % (1000 * 60 * 60)) /
-            (1000 * 60)
+            (difference % (1000 * 60 * 60))
+            / (1000 * 60)
         );
 
         const s = Math.floor(
-            (difference % (1000 * 60)) /
-            1000
+            (difference % (1000 * 60))
+            / 1000
         );
 
-        days.textContent = String(d).padStart(2, "0");
-        hours.textContent = String(h).padStart(2, "0");
-        minutes.textContent = String(m).padStart(2, "0");
-        seconds.textContent = String(s).padStart(2, "0");
+        days.textContent =
+            String(d).padStart(2,"0");
+
+        hours.textContent =
+            String(h).padStart(2,"0");
+
+        minutes.textContent =
+            String(m).padStart(2,"0");
+
+        seconds.textContent =
+            String(s).padStart(2,"0");
 
     }
 
     update();
 
-    const interval = setInterval(update, 1000);
+    const interval =
+        setInterval(update,1000);
 
 }

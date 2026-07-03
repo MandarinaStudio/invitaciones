@@ -1,209 +1,261 @@
-.overlay{
+.overlay {
+  width: 100%;
+  height: 100%;
 
-    width:100%;
-    height:100%;
+  display: flex;
 
-    display:flex;
+  flex-direction: column;
 
-    flex-direction:column;
+  justify-content: center;
 
-    justify-content:center;
+  align-items: center;
 
-    align-items:center;
+  background: rgba(0, 0, 0, 0.45);
 
-    background:rgba(0,0,0,.45);
-
-    gap:20px;
-
+  gap: 20px;
 }
 
-.overlay h1{
-
-    font-size:3rem;
-
+.overlay h1 {
+  font-size: 3rem;
 }
 
-.overlay p{
-
-    font-size:1.2rem;
-
+.overlay p {
+  font-size: 1.2rem;
 }
 
-button{
+button {
+  border: none;
 
-    border:none;
+  padding: 18px 40px;
 
-    padding:18px 40px;
+  border-radius: 999px;
 
-    border-radius:999px;
+  background: var(--color-primary);
 
-    background:var(--color-primary);
+  color: white;
 
-    color:white;
+  cursor: pointer;
 
-    cursor:pointer;
+  font-size: 18px;
 
-    font-size:18px;
-
-    transition:.3s;
-
+  transition: 0.3s;
 }
 
-button:hover{
-
-    transform:scale(1.05);
-
+button:hover {
+  transform: scale(1.05);
 }
-@keyframes float{
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
 
-0%{
+  50% {
+    transform: translateY(12px);
+  }
 
-transform:translateY(0px);
-
-}
-
-50%{
-
-transform:translateY(12px);
-
-}
-
-100%{
-
-transform:translateY(0px);
-
-}
-
+  100% {
+    transform: translateY(0px);
+  }
 }
 @keyframes heroZoom {
+  from {
+    transform: scale(1);
+  }
 
-    from {
-
-        transform: scale(1);
-
-    }
-
-    to {
-
-        transform: scale(1.08);
-
-    }
-
+  to {
+    transform: scale(1.08);
+  }
 }
 
-.music-button{
+.music-button {
+  position: absolute;
 
-    position:absolute;
+  top: 25px;
+  right: 25px;
 
-    top:25px;
-    right:25px;
+  width: 54px;
+  height: 54px;
 
-    width:54px;
-    height:54px;
+  border: none;
 
-    border:none;
+  border-radius: 50%;
 
-    border-radius:50%;
+  background: rgba(255, 255, 255, 0.25);
 
-    background:rgba(255,255,255,.25);
+  backdrop-filter: blur(10px);
 
-    backdrop-filter:blur(10px);
+  color: white;
 
-    color:white;
+  font-size: 22px;
 
-    font-size:22px;
-
-    cursor:pointer;
-
+  cursor: pointer;
 }
 
 /* ==========================
    COUNTDOWN
 ========================== */
 
-.countdown{
+.countdown {
+  display: flex;
 
-    display:flex;
+  justify-content: center;
 
-    justify-content:center;
+  gap: 18px;
 
-    gap:18px;
+  margin-top: 40px;
 
-    margin-top:40px;
-
-    flex-wrap:wrap;
-
+  flex-wrap: wrap;
 }
 
-.countdown-item{
+.countdown-item {
+  width: 90px;
 
-    width:90px;
+  height: 90px;
 
-    height:90px;
+  border-radius: 18px;
 
-    border-radius:18px;
+  background: rgba(255, 255, 255, 0.18);
 
-    background:rgba(255,255,255,.18);
+  backdrop-filter: blur(12px);
 
-    backdrop-filter:blur(12px);
+  display: flex;
 
-    display:flex;
+  flex-direction: column;
 
-    flex-direction:column;
+  justify-content: center;
 
-    justify-content:center;
-
-    align-items:center;
-
+  align-items: center;
 }
 
-.countdown-item span{
+.countdown-item span {
+  font-size: 2rem;
 
-    font-size:2rem;
+  font-weight: 700;
 
-    font-weight:700;
-
-    color:white;
-
+  color: white;
 }
 
-.countdown-item small{
+.countdown-item small {
+  margin-top: 4px;
 
-    margin-top:4px;
+  color: white;
 
-    color:white;
+  opacity: 0.8;
 
-    opacity:.8;
-
-    font-size:.8rem;
-
+  font-size: 0.8rem;
 }
 
 /*==============================
 DETALLES
 ==============================*/
 
-.container{
+.container {
+  width: min(1100px, 90%);
 
-    width:min(1100px,90%);
-
-    margin:auto;
-
+  margin: auto;
 }
 
-#details{
+#details {
+  display: none;
+
+  padding: 100px 0;
+
+  background: #fff;
+
+  color: #222;
+}
+
+#details h2,
+#dressCode h2 {
+  text-align: center;
+
+  margin-bottom: 50px;
+
+  font-size: 2rem;
+
+  color: #222;
+}
+
+.detail-card {
+  max-width: 600px;
+
+  margin: auto;
+
+  padding: 40px;
+
+  border-radius: 24px;
+
+  background: #fafafa;
+
+  text-align: center;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.detail-card h3 {
+  font-size: 1.5rem;
+
+  margin-bottom: 15px;
+
+  color: #222;
+}
+
+.detail-card p {
+  margin-bottom: 30px;
+
+  color: #555;
+}
+
+.primary-button {
+  display: inline-block;
+
+  padding: 14px 28px;
+
+  border-radius: 999px;
+
+  background: #d9a441;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+}
+
+.hidden-section {
+  display: none;
+}
+
+#dressCode {
+  display: none;
+
+  padding: 100px 0;
+
+  background: #f8f8f8;
+
+  color: #222;
+}
+/*==============================
+ACTIVIDADES
+==============================*/
+
+#activities{
 
     display:none;
 
     padding:100px 0;
 
-    background:#fff;
-
-    color:#222;
+    background:#ffffff;
 
 }
 
-#details h2{
+.section-title{
 
     text-align:center;
 
@@ -215,68 +267,52 @@ DETALLES
 
 }
 
-.detail-card{
+.activities-grid{
 
-    max-width:600px;
+    display:grid;
 
-    margin:auto;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 
-    padding:40px;
+    gap:25px;
 
-    border-radius:24px;
+}
+
+.activity-card{
 
     background:#fafafa;
 
+    border-radius:20px;
+
+    padding:35px 20px;
+
     text-align:center;
 
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
-
-}
-
-.detail-card h3{
-
-    font-size:1.5rem;
-
-    margin-bottom:15px;
-
-    color:#222;
-
-}
-
-.detail-card p{
-
-    margin-bottom:30px;
-
-    color:#555;
-
-}
-
-.primary-button{
-
-    display:inline-block;
-
-    padding:14px 28px;
-
-    border-radius:999px;
-
-    background:#d9a441;
-
-    color:#fff;
-
-    text-decoration:none;
-
-    font-weight:600;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
 
     transition:.3s;
 
 }
 
-.primary-button:hover{
+.activity-card:hover{
 
-    transform:translateY(-2px);
+    transform:translateY(-6px);
 
 }
 
-.hidden-section{
-    display:none;
+.activity-card span{
+
+    display:block;
+
+    font-size:3rem;
+
+    margin-bottom:15px;
+
+}
+
+.activity-card h3{
+
+    color:#333;
+
+    font-size:1.2rem;
+
 }
