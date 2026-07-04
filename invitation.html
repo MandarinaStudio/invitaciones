@@ -13,15 +13,22 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/decorations.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
 
   <body>
+    <div id="pageBackground"></div>
+    <div id="decorations"></div>
     <div id="app">
       <section id="welcome">
         <div class="overlay">
@@ -70,12 +77,28 @@
           <div class="scroll-indicator">↓</div>
         </div>
       </section>
+<section id="story" class="reveal">
 
-      <section id="details">
+    <div class="container">
+
+        <div class="story-card">
+
+            <span class="story-icon">💛</span>
+
+            <h2 id="storyTitle"></h2>
+
+            <p id="storyText"></p>
+
+        </div>
+
+    </div>
+
+</section>
+      <section id="details" class="reveal">
         <div class="container">
           <h2>Detalles del Evento</h2>
 
-          <div class="detail-card">
+          <div class="detail-card mie-card">
             <h3 id="venueName"></h3>
 
             <p id="venueAddress"></p>
@@ -86,26 +109,72 @@
           </div>
         </div>
       </section>
-      <section id="dressCode">
+      <section id="dressCode" class="reveal">
         <div class="container">
           <h2>Dress Code</h2>
 
-          <div class="detail-card">
+          <div class="detail-card mie-card">
             <h3 id="dressTitle"></h3>
 
             <p id="dressDescription"></p>
           </div>
         </div>
       </section>
-      <section id="activities">
+      <section id="activities" class="reveal">
+        <div class="container">
+          <div class="mie-card">
+            <h2 class="section-title">¡Diversión garantizada!</h2>
+
+            <div id="activitiesGrid" class="activities-grid"></div>
+          </div>
+        </div>
+      </section>
+      <section id="rsvp" class="reveal">
+        <div class="container">
+          <div class="mie-card">
+            <h2 class="section-title">Confirma tu asistencia</h2>
+
+            <p class="rsvp-text">
+              Nos ayudará mucho saber si podrás acompañarnos.
+            </p>
+
+            <input id="guestName" type="text" placeholder="Tu nombre" />
+
+            <button id="rsvpButton">Confirmar por WhatsApp</button>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="reveal">
+        <div class="container">
+          <div class="mie-card">
+            <h2 id="galleryTitle" class="section-title"></h2>
+
+            <p id="gallerySubtitle" class="section-subtitle"></p>
+
+            <div class="swiper gallerySwiper">
+              <div id="galleryWrapper" class="swiper-wrapper"></div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gift" class="reveal">
 
     <div class="container">
 
-        <h2 class="section-title">
-            ¡Diversión garantizada!
-        </h2>
+        <div class="mie-card detail-card">
 
-        <div id="activitiesGrid" class="activities-grid">
+            <h2 id="giftTitle"></h2>
+
+            <p id="giftSubtitle"></p>
+
+            <a
+                id="giftButton"
+                class="primary-button"
+                target="_blank">
+
+            </a>
 
         </div>
 
@@ -113,7 +182,7 @@
 
 </section>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <audio id="bgMusic" loop></audio>
   </body>

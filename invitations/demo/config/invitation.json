@@ -1,9 +1,20 @@
 {
   "title": "Mateo cumple 5 años",
   "subtitle": "15 de Agosto • 3:00 PM",
-  "hero": "cover.jpg",
+  "hero": "cover.webp",
+  "background": "background.webp",
   "music": "music.mp3",
   "eventDate": "2026-08-15T15:00:00",
+
+  "story":{
+
+    "enabled": true,
+
+    "title":"¡Estás Invitado!",
+
+    "text":"Queremos compartir contigo un día muy especial. Nos llenaría de alegría contar con tu presencia para celebrar el cumpleaños de Mateo. A continuación encontrarás todos los detalles para acompañarnos en esta gran aventura."
+
+},
 
   "venue": {
     "name": "Salón Los Jardines",
@@ -14,13 +25,33 @@
     "title": "Formal",
     "description": "Te esperamos con tu mejor atuendo para celebrar juntos este día."
   },
-  "activities": [
-    "Inflable",
-    "Pintacaritas",
-    "Pizza",
-    "Piñata",
-    "Pastel"
-]
+  "activities": ["Inflable", "Pintacaritas", "Pizza", "Piñata", "Pastel"],
 
-  
+  "rsvp": {
+    "phone": "50688888888",
+
+    "message": "¡Hola! Confirmo mi asistencia al cumpleaños."
+  },
+  "gallery": {
+    "enabled": true,
+
+    "title": "Momentos especiales",
+
+    "subtitle": "Así hemos disfrutado juntos.",
+
+    "autoplay": true,
+
+    "delay": 3500,
+    "layout": "portrait",
+    "loop": true,
+
+    "images": ["gallery1.jpg", "gallery2.jpg", "gallery3.jpg", "gallery4.jpg"]
+  },
+  "gift": {
+    "enabled": true,
+    "title": "Mesa de Regalos",
+    "subtitle": "Tu presencia es nuestro mejor regalo, pero si deseas tener un detalle con nosotros puedes hacerlo aquí.",
+    "buttonText": "Ver opciones",
+    "url": "https://www.amazon.com/"
+}
 }

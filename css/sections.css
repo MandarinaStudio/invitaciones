@@ -1,0 +1,384 @@
+/*==================================
+SECCIONES
+==================================*/
+
+#details,
+#dressCode,
+#activities{
+
+    display:none;
+
+    padding:100px 0;
+
+    position:relative;
+
+}
+
+/*==================================
+TÍTULOS
+==================================*/
+
+.section-title,
+#details h2,
+#dressCode h2{
+
+    text-align:center;
+
+    font-size:2.3rem;
+
+    color:#5f4738;
+
+    margin-bottom:45px;
+
+}
+
+/*==================================
+MIE CARD
+==================================*/
+
+.mie-card{
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(14px);
+
+    -webkit-backdrop-filter:blur(14px);
+
+    border-radius:30px;
+
+    padding:45px;
+
+    box-shadow:
+
+        0 18px 45px rgba(0,0,0,.08);
+
+}
+
+/*==================================
+DETAILS
+==================================*/
+
+.detail-card{
+
+    max-width:650px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.detail-card h3{
+
+    font-size:1.6rem;
+
+    color:#5f4738;
+
+    margin-bottom:15px;
+
+}
+
+.detail-card p{
+
+    color:#666;
+
+    margin-bottom:35px;
+
+    line-height:1.8;
+
+}
+
+/*==================================
+ACTIVITIES
+==================================*/
+
+.activities-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(auto-fit,minmax(150px,1fr));
+
+    gap:30px;
+
+}
+
+.activity-card{
+
+    text-align:center;
+
+    padding:15px;
+
+    transition:.35s;
+
+}
+
+.activity-card:hover{
+
+    transform:
+
+        translateY(-6px);
+
+}
+
+.activity-card span{
+
+    font-size:3rem;
+
+    display:block;
+
+    margin-bottom:12px;
+
+}
+
+.activity-card h3{
+
+    color:#5f4738;
+
+    font-size:1.05rem;
+
+}
+
+/*==================================
+HIDDEN
+==================================*/
+
+.hidden-section{
+
+    display:none;
+
+}
+
+/*==================================
+RSVP
+==================================*/
+
+#rsvp{
+
+    display:none;
+
+    padding:100px 0;
+
+}
+
+.rsvp-text{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:#666;
+
+}
+
+#guestName{
+
+    width:100%;
+
+    max-width:450px;
+
+    display:block;
+
+    margin:0 auto 25px;
+
+    padding:18px 22px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#ffffff;
+
+    font-size:1rem;
+
+    outline:none;
+
+    box-shadow:
+
+        inset 0 0 0 2px rgba(0,0,0,.05);
+
+}
+
+#guestName:focus{
+
+    box-shadow:
+
+        inset 0 0 0 2px #d9a441;
+
+}
+
+#rsvpButton{
+
+    display:block;
+
+    margin:auto;
+
+}
+
+/*==================================
+GALLERY
+==================================*/
+
+#gallery{
+
+    display:none;
+
+    padding:100px 0;
+
+}
+
+.section-subtitle{
+
+    max-width:500px;
+
+    margin:0 auto 35px;
+
+    text-align:center;
+
+    color:#7a6d63;
+
+    line-height:1.7;
+
+}
+
+.gallerySwiper{
+
+    width:100%;
+
+    overflow:hidden;
+
+}
+
+.gallerySwiper .swiper-slide{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.gallerySwiper img{
+
+    width:100%;
+
+
+    object-fit:cover;
+
+    border-radius:24px;
+
+    box-shadow:
+
+        0 15px 40px rgba(0,0,0,.12);
+
+}
+.gallery-portrait img{
+
+    aspect-ratio:4/5;
+
+}
+.gallery-landscape img{
+
+    aspect-ratio:16/9;
+
+}
+.gallery-square img{
+
+    aspect-ratio:1/1;
+
+}
+.gallerySwiper .swiper-pagination{
+
+    position:relative;
+
+    margin-top:22px;
+
+}
+
+.gallerySwiper .swiper-pagination-bullet{
+
+    width:10px;
+
+    height:10px;
+
+    background:#d9a441;
+
+    opacity:.35;
+
+}
+
+.gallerySwiper .swiper-pagination-bullet-active{
+
+    opacity:1;
+
+}
+/*==================================
+GIFT
+==================================*/
+
+#gift{
+
+    display:none;
+
+    padding:100px 0;
+
+}
+/*==================================
+STORY
+==================================*/
+
+#story{
+
+    display:none;
+
+    padding:100px 0;
+
+}
+
+.story-card{
+
+    max-width:700px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.story-icon{
+
+    display:block;
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.story-card h2{
+
+    color:#5f4738;
+
+    font-size:2.2rem;
+
+    margin-bottom:25px;
+
+}
+
+.story-card p{
+
+    color:#666;
+
+    font-size:1.08rem;
+
+    line-height:2;
+
+    max-width:620px;
+
+    margin:auto;
+
+}
