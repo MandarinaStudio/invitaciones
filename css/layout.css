@@ -41,6 +41,8 @@
   width: 100%;
   height: 100%;
 
+  padding: clamp(5.5rem, 12vh, 7.5rem) 1.5rem 5.5rem;
+
   display: flex;
 
   flex-direction: column;
@@ -57,15 +59,26 @@ background: linear-gradient(
 }
 
 .hero-overlay h2 {
-  font-size: 4rem;
+  max-width: min(900px, 100%);
+
+  font-size: clamp(1.75rem, 6vw, 4rem);
+  line-height: 1.08;
 
   font-weight: 700;
+
+  color: #fff;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, .55);
+
+  overflow-wrap: anywhere;
 }
 
 .hero-overlay p {
-  margin-top: 20px;
+  margin-top: 60px;
 
-  font-size: 1.3rem;
+  font-size: 1.8rem;
+
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, .55);
 }
 
 .scroll-indicator {
@@ -100,11 +113,11 @@ SCROLL ANIMATIONS
 
     opacity:0;
 
-    transform:translateY(15px);
+    transform:translateY(42px) scale(.98);
 
     transition:
-        opacity .6s ease,
-        transform .6s ease;
+        opacity .7s ease,
+        transform .7s cubic-bezier(.2,.7,.2,1);
 
     will-change:opacity,transform;
 
@@ -114,6 +127,34 @@ SCROLL ANIMATIONS
 
     opacity:1;
 
-    transform:translateY(0);
+    transform:translateY(0) scale(1);
 
+}
+
+#dressCode.reveal,
+#rsvp.reveal {
+    transform:translateX(-42px) scale(.98);
+}
+
+#activities.reveal,
+#gallery.reveal {
+    transform:translateX(42px) scale(.98);
+}
+
+#dressCode.reveal.show,
+#rsvp.reveal.show,
+#activities.reveal.show,
+#gallery.reveal.show {
+    transform:translateX(0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    #dressCode.reveal,
+    #rsvp.reveal,
+    #activities.reveal,
+    #gallery.reveal {
+        transition: none;
+        transform: none;
+    }
 }

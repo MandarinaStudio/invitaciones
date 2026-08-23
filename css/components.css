@@ -2,6 +2,8 @@
   width: 100%;
   height: 100%;
 
+  padding: clamp(2rem, 8vh, 5rem) 1.5rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,11 +15,101 @@
 }
 
 .overlay h1 {
-  font-size: 3rem;
+  max-width: min(900px, 100%);
+
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  line-height: 1.1;
+
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, .55);
+
+  overflow-wrap: anywhere;
 }
 
 .overlay p {
   font-size: 1.2rem;
+
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, .55);
+}
+
+/* Asigna aquí el fondo del sobre, por ejemplo:*/
+
+ #welcomeEnvelope { background-image: url("../invitations/andre-15/img/envelope.png"); } 
+   
+.envelope-container {
+  width: min(72vw, 300px);
+  aspect-ratio: 1.7;
+
+  border: 1px solid rgba(255, 255, 255, .45);
+  border-radius: 18px;
+
+  background: var(--welcome-envelope, transparent) center / cover no-repeat;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, .28);
+}
+
+
+/* Tema gótico: Tangerine se reserva para títulos, mientras que Poppins
+   conserva una lectura clara en los textos largos. */
+body[data-theme="gothic"] .overlay h1,
+body[data-theme="gothic"] .hero-overlay h2,
+body[data-theme="gothic"] .section-title,
+body[data-theme="gothic"] #details h2,
+body[data-theme="gothic"] #dressCode h2,
+body[data-theme="gothic"] .story-card h2,
+body[data-theme="gothic"] #giftTitle,
+body[data-theme="gothic"] .footer-content h2 {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  letter-spacing: .03em;
+}
+
+body[data-theme="gothic"] .overlay h1,
+body[data-theme="gothic"] .hero-overlay h2 {
+  font-size: clamp(3.4rem, 11vw, 6.5rem);
+  line-height: .86;
+}
+
+body[data-theme="gothic"] .section-title,
+body[data-theme="gothic"] #details h2,
+body[data-theme="gothic"] #dressCode h2,
+body[data-theme="gothic"] .story-card h2,
+body[data-theme="gothic"] #giftTitle,
+body[data-theme="gothic"] .footer-content h2 {
+  font-size: clamp(3.2rem, 9vw, 5rem);
+  line-height: .9;
+}
+
+body[data-theme="gothic"] .detail-card h3,
+body[data-theme="gothic"] .activity-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+/* Contraste para fondos oscuros del tema gótico. */
+body[data-theme="gothic"] h1,
+body[data-theme="gothic"] h2,
+body[data-theme="gothic"] h3 {
+  color: #fff !important;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, .45);
+}
+
+body[data-theme="gothic"] .mie-card,
+body[data-theme="gothic"] .footer-content {
+  background: rgba(20, 14, 30, .2);
+  border-color: rgba(255, 255, 255, .2);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, .28);
+}
+
+body[data-theme="gothic"] .mie-card p,
+body[data-theme="gothic"] .story-card p,
+body[data-theme="gothic"] .section-subtitle,
+body[data-theme="gothic"] .rsvp-text,
+body[data-theme="gothic"] .footer-content p {
+  color: rgba(255, 255, 255, .84);
 }
 
 button {
@@ -272,7 +364,7 @@ BUTTONS
 
   border-radius:999px;
 
-  background:#d9a441;
+  background:#b70000;
 
   color:#fff;
 

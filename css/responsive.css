@@ -2,13 +2,73 @@
 
 .overlay h1{
 
-font-size:2rem;
+font-size: clamp(1.75rem, 7vw, 2.25rem);
+line-height: 1.08;
+
+}
+
+.overlay p {
+
+font-size: 1rem;
+
+}
+
+.envelope-container {
+
+width: min(72vw, 260px);
 
 }
 
 button{
 
 width:85%;
+
+}
+
+.hero-overlay {
+
+padding: 5rem 1rem 4.5rem;
+
+}
+
+.hero-overlay h2 {
+
+font-size: clamp(1.75rem, 7vw, 2.25rem);
+
+}
+
+.hero-overlay p {
+
+margin-top: 14px;
+font-size: 1rem;
+
+}
+
+.countdown {
+
+gap: 10px;
+margin-top: 28px;
+flex-wrap: nowrap;
+
+}
+
+.countdown-item {
+
+width: min(86px, calc((100vw - 62px) / 4));
+height: min(86px, calc((100vw - 62px) / 4));
+border-radius: 15px;
+
+}
+
+.countdown-item span {
+
+font-size: 1.85rem;
+
+}
+
+.countdown-item small {
+
+font-size: .75rem;
 
 }
 

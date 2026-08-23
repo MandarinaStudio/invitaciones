@@ -1,4 +1,4 @@
-const slug = "demo";
+const slug = "andrea-15";
 
 let invitation = null;
 let gallerySwiper = null;
@@ -24,23 +24,45 @@ async function init() {
 
   if (!invitation) return;
 
+  document.body.dataset.theme = invitation.theme || "classic";
+
   // =========================
   // BACKGROUND (FIXED SIMPLE)
   // =========================
 
   const bg = document.getElementById("pageBackground");
+  const backgroundUrl = new URL(
+    `invitations/${slug}/img/${invitation.background}`,
+    window.location.href,
+  ).href;
 
   if (bg) {
-    bg.style.backgroundImage = `url(invitations/${slug}/img/background.webp)`;
+    bg.style.backgroundImage = `url("${backgroundUrl}")`;
   }
+
+  // Cada sección usa el fondo de la invitación de forma independiente. Los
+  // gradientes propios de CSS conservan una buena legibilidad del contenido.
+  const sectionBackgrounds = invitation.sectionBackgrounds || {};
+  document
+    .querySelectorAll(
+      "#hero, #story, #details, #dressCode, #activities, #rsvp, #gallery, #gift, #eventFooter",
+    )
+    .forEach((section) => {
+      const image = sectionBackgrounds[section.id] || invitation.background;
+      const imageUrl = new URL(
+        `invitations/${slug}/img/${image}`,
+        window.location.href,
+      ).href;
+
+      section.style.setProperty("--section-background", `url("${imageUrl}")`);
+    });
 
   // =========================
   // WELCOME
   // =========================
 
-  document.getElementById("eventTitle").textContent = invitation.title;
-
-  document.getElementById("eventSubtitle").textContent = invitation.subtitle;
+  document.getElementById("eventTitle").textContent =
+    invitation.welcomeTitle || invitation.title;
 
   document.getElementById("welcome").style.backgroundImage =
     `url(invitations/${slug}/img/${invitation.hero})`;
@@ -49,7 +71,8 @@ async function init() {
   // HERO
   // =========================
 
-  document.getElementById("heroTitle").textContent = invitation.title;
+  document.getElementById("heroTitle").textContent =
+    invitation.heroTitle || invitation.title;
 
   document.getElementById("heroDate").textContent = invitation.subtitle;
 
@@ -111,26 +134,28 @@ async function init() {
   // ACTIVIDADES
   // =========================
 
-  const activitiesGrid = document.getElementById("activitiesGrid");
+  if (invitation.showActivities !== false) {
+    const activitiesGrid = document.getElementById("activitiesGrid");
 
-  activitiesGrid.innerHTML = "";
+    activitiesGrid.innerHTML = "";
 
-  const icons = {
-    Inflable: "🏰",
-    Pintacaritas: "🎨",
-    Pizza: "🍕",
-    Piñata: "🪅",
-    Pastel: "🎂",
-  };
+    const icons = {
+      Inflable: "🏰",
+      Pintacaritas: "🎨",
+      Pizza: "🍕",
+      Piñata: "🪅",
+      Pastel: "🎂",
+    };
 
-  invitation.activities.forEach((activity) => {
-    activitiesGrid.innerHTML += `
+    invitation.activities.forEach((activity) => {
+      activitiesGrid.innerHTML += `
             <div class="activity-card">
                 <span>${icons[activity] || "🎉"}</span>
                 <h3>${activity}</h3>
             </div>
         `;
-  });
+    });
+  }
 
   // =========================
   // COUNTDOWN
@@ -167,8 +192,11 @@ function enterInvitation() {
     document.getElementById("story").style.display = "block";
     document.getElementById("details").style.display = "block";
     document.getElementById("dressCode").style.display = "block";
-    document.getElementById("activities").style.display = "block";
+    if (invitation.showActivities !== false) {
+      document.getElementById("activities").style.display = "block";
+    }
     document.getElementById("gift").style.display = "block";
+    document.getElementById("eventFooter").style.display = "block";
     // RSVP
     document.getElementById("rsvp").style.display = "block";
     renderGallery();
@@ -276,7 +304,7 @@ function initDecorations() {
 
   if (!container) return;
 
-  const items = ["🎈", "🎉", "✨", "🎂", "🪅"];
+  const items = ["♠", "♥", "♦", "♣"];
 
   function createDecoration() {
     const el = document.createElement("div");

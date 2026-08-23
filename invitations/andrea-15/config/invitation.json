@@ -1,10 +1,22 @@
 {
-  "title": "¿Quieres acompañarme a una fiesta de no-cumpleaños? Bueno... ¡esta vez sí es mi cumpleaños!",
-  "welcomeTitle": "¡Tienes una invitación especial esperándote!",
-  "heroTitle": "¡Celebremos el cumpleaños de Mateo!",
+  "theme": "gothic",
+  "title": "¿Hola",
+  "welcomeTitle": "¡Sigue al conejo blanco!",
+  "heroTitle": "¿Quieres acompañarme a una fiesta de no-cumpleaños?",
   "subtitle": "17 de Octubre • 2:00 PM",
-  "hero": "cover.png",
-  "background": "background.webp",
+
+  "hero": "hero.webp",
+  "background": "background.png",
+  "sectionBackgrounds": {
+    "story": "story.jpg",
+    "details": "story.jpg",
+    "dressCode": "story.jpg",
+    "activities": "story.jpg",
+    "rsvp": "story.jpg",
+    "gallery": "story.jpg",
+    "gift": "story.jpg",
+    "eventFooter": "story.jpg"
+  },
   "music": "music.mp3",
   "eventDate": "2026-10-17T14:00:00",
 
@@ -12,9 +24,9 @@
 
     "enabled": true,
 
-    "title":"¡Estás Invitado!",
+    "title":"Andrea Abarca Rodríguez",
 
-    "text":"Queremos compartir contigo un día muy especial. Nos llenaría de alegría contar con tu presencia para celebrar el cumpleaños de Mateo. A continuación encontrarás todos los detalles para acompañarnos en esta gran aventura."
+    "text":"Te invita a celebrar juntos este día tan especial, con una fiesta de no-cumpleaños al estilo de Alicia en el País de las Maravillas. Ven y acompáñala en el inicio de una nueva etapa de mi vida."
 
 },
 
@@ -24,9 +36,10 @@
     "maps": "https://ul.waze.com/ul?ll=10.00311711%2C-84.00749445&navigate=yes&zoom=17&utm_campaign=waze_website&utm_source=waze_website&utm_medium=lm_share_location"
   },
   "dressCode": {
-    "title": "Formal",
-    "description": "Te esperamos con tu mejor atuendo para celebrar juntos este día."
+    "title": "Semiformal",
+    "description": "Te esperamos con tu mejor atuendo para celebrar juntos este día, puede ser alusivo al mundo de Alicia en el Pais de las Maravillas, colores rojo, negro y blanco."
   },
+  "showActivities": false,
   "activities": ["Inflable", "Pintacaritas", "Pizza", "Piñata", "Pastel"],
 
   "rsvp": {

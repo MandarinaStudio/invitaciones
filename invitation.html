@@ -6,6 +6,10 @@
 
     <title>MIE - Mandarina Invites Engine</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -32,11 +36,12 @@
     <div id="app">
       <section id="welcome">
         <div class="overlay">
+         
           <h1 id="eventTitle">Cargando...</h1>
-
-          <p id="eventSubtitle"></p>
-
-          <button id="enterButton">Abrir invitación</button>
+ <div id="welcomeEnvelope" class="envelope-container" aria-hidden="true">     
+  <button id="enterButton">Abrir invitación</button>
+</div>
+     
         </div>
       </section>
 
@@ -83,7 +88,7 @@
 
         <div class="story-card">
 
-            <span class="story-icon">💛</span>
+            <span class="story-icon">♥️♣️♦️♠️</span>
 
             <h2 id="storyTitle"></h2>
 
@@ -96,7 +101,7 @@
 </section>
       <section id="details" class="reveal">
         <div class="container">
-          <h2>Detalles del Evento</h2>
+          <h2>Lugar del Evento</h2>
 
           <div class="detail-card mie-card">
             <h3 id="venueName"></h3>
@@ -122,18 +127,18 @@
       </section>
       <section id="activities" class="reveal">
         <div class="container">
-          <div class="mie-card">
-            <h2 class="section-title">¡Diversión garantizada!</h2>
+          <h2 class="section-title">¡Diversión garantizada!</h2>
 
+          <div class="mie-card">
             <div id="activitiesGrid" class="activities-grid"></div>
           </div>
         </div>
       </section>
       <section id="rsvp" class="reveal">
         <div class="container">
-          <div class="mie-card">
-            <h2 class="section-title">Confirma tu asistencia</h2>
+          <h2 class="section-title">Confirma tu asistencia</h2>
 
+          <div class="mie-card">
             <p class="rsvp-text">
               Nos ayudará mucho saber si podrás acompañarnos.
             </p>
@@ -146,11 +151,11 @@
       </section>
       <section id="gallery" class="reveal">
         <div class="container">
+          <h2 id="galleryTitle" class="section-title"></h2>
+
+          <p id="gallerySubtitle" class="section-subtitle"></p>
+
           <div class="mie-card">
-            <h2 id="galleryTitle" class="section-title"></h2>
-
-            <p id="gallerySubtitle" class="section-subtitle"></p>
-
             <div class="swiper gallerySwiper">
               <div id="galleryWrapper" class="swiper-wrapper"></div>
 
@@ -163,9 +168,9 @@
 
     <div class="container">
 
-        <div class="mie-card detail-card">
+        <h2 id="giftTitle" class="section-title"></h2>
 
-            <h2 id="giftTitle"></h2>
+        <div class="mie-card detail-card">
 
             <p id="giftSubtitle"></p>
 
@@ -181,6 +186,13 @@
     </div>
 
 </section>
+      <footer id="eventFooter" class="reveal">
+        <div class="footer-content">
+          <span class="footer-icon" aria-hidden="true">✨</span>
+          <h2>¡Te esperamos!</h2>
+          <p>Gracias por ser parte de este día tan especial.</p>
+        </div>
+      </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
