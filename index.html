@@ -1,312 +1,182 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>MIE - Mandarina Invites Engine</title>
+<head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+<title>Mandarina Design | Invitaciones Digitales</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+ href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+ rel="stylesheet"
+/><link
+href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/home.css">
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+</head>
 
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/components.css" />
-    <link rel="stylesheet" href="css/sections.css" />
-    <link rel="stylesheet" href="css/decorations.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-  </head>
 
-  <body>
-    <div id="pageBackground"></div>
+<body>
 
-    <div id="decorations"></div>
 
-    <div id="app">
-      <!-- =========================
-           WELCOME
-      ========================== -->
+<section class="home-hero">
 
-      <section id="welcome">
-        <div class="overlay">
-          <h1 id="eventTitle">Cargando...</h1>
+<div class="home-overlay">
 
-          <div id="welcomeEnvelope" class="envelope-container">
-            <img
-              id="welcomeEnvelopeImage"
-              class="welcome-envelope"
-              alt=""
-              aria-hidden="true"
-            />
-
-            <button id="enterButton">Abrir invitación</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- =========================
-           HERO
-      ========================== -->
-
-      <section id="hero">
-        <button id="musicButton" class="music-button">🔊</button>
-
-        <div class="hero-overlay">
-          <h2 id="heroTitle"></h2>
-
-          <p id="heroDate"></p>
-
-          <section class="countdown">
-            <div class="countdown-item">
-              <span id="days">00</span>
-              <small>Días</small>
-            </div>
-
-            <div class="countdown-item">
-              <span id="hours">00</span>
-              <small>Horas</small>
-            </div>
-
-            <div class="countdown-item">
-              <span id="minutes">00</span>
-              <small>Minutos</small>
-            </div>
-
-            <div class="countdown-item">
-              <span id="seconds">00</span>
-              <small>Segundos</small>
-            </div>
-          </section>
-
-          <div class="scroll-indicator">↓</div>
-        </div>
-      </section>
-
-      <!-- =========================
-           STORY
-      ========================== -->
-
-      <section id="story" class="reveal">
-        <div class="container">
-          <div class="story-card">
-            <span class="story-icon"> ♥️♣️♦️♠️ </span>
-            <p id="storySubtitle"></p>
-
-            <h2 id="storyTitle"></h2>
-
-            <p id="storyText"></p>
-          </div>
-        </div>
-      </section>
-
-      <!-- =========================
-           image 1
-      ========================== -->
-
-   <section id="image1" class="image-section reveal">
+<div class="home-logo">
 
   <img
-    id="imageSection1"
-    alt="Imagen decorativa"
-  />
+    src="assets/img/logo.svg"
+    alt="Mandarina Design"
+  >
+
+</div>
+
+<h2>
+Invitaciones digitales que crean experiencias
+</h2>
+
+<p>
+Diseñamos invitaciones interactivas para momentos que merecen ser recordados.
+</p>
+
+
+<a
+class="primary-button"
+href="https://wa.me/50687051571"
+target="_blank">
+
+Crear mi invitación
+
+</a>
+
+
+</div>
 
 </section>
 
-      <!-- =========================
-           DETAILS
-      ========================== -->
 
-      <section id="details" class="reveal">
-        <div class="container">
-          <h2>Lugar del Evento</h2>
 
-          <div class="detail-card mie-card">
-            <h3 id="venueName"></h3>
+<section class="home-section">
 
-            <p id="venueAddress"></p>
 
-            <a id="mapsButton" class="primary-button" target="_blank">
-              Cómo llegar
-            </a>
-          </div>
-        </div>
-      </section>
+<h2>
+Nuestros servicios
+</h2>
 
-      <!-- =========================
-           DRESS CODE
-      ========================== -->
 
-      <section id="dressCode" class="reveal">
-        <div class="container">
-          <h2>Dress Code</h2>
+<div class="service-grid">
 
-          <div class="detail-card mie-card">
-            <h3 id="dressTitle"></h3>
 
-            <p id="dressDescription"></p>
-          </div>
-        </div>
-      </section>
+<div class="service-card">
 
-      <!-- =========================
-           ACTIVITIES
-      ========================== -->
+<h3>
+Cumpleaños
+</h3>
 
-      <section id="activities" class="reveal">
-        <div class="container">
-          <h2 class="section-title">¡Diversión garantizada!</h2>
+<p>
+Invitaciones únicas para celebrar momentos especiales.
+</p>
 
-          <div class="mie-card">
-            <div id="activitiesGrid" class="activities-grid"></div>
-          </div>
-        </div>
-      </section>
+</div>
 
-      <!-- =========================
-           RSVP
-      ========================== -->
 
-      <section id="rsvp" class="reveal">
-        <div class="container">
-          <h2 class="section-title">Confirma tu asistencia</h2>
 
-          <div class="mie-card">
-            <p class="rsvp-text">
-              Nos ayudará mucho saber si podrás acompañarnos.
-            </p>
+<div class="service-card">
 
-            <input id="guestName" type="text" placeholder="Tu nombre" />
+<h3>
+Bodas
+</h3>
 
-            <button id="rsvpButton">Confirmar por WhatsApp</button>
-          </div>
-        </div>
-      </section>
+<p>
+Experiencias elegantes para un día inolvidable.
+</p>
 
-      <!-- =========================
-           image 2
-      ========================== -->
+</div>
 
-  <section id="image2" class="image-section reveal">
 
-  <img
-    id="imageSection2"
-    alt="Imagen decorativa"
-  />
+
+<div class="service-card">
+
+<h3>
+Baby showers
+</h3>
+
+<p>
+Comparte la llegada de un nuevo integrante con estilo.
+</p>
+
+</div>
+
+
+
+<div class="service-card">
+
+<h3>
+  Eventos especiales
+</h3>
+
+<p>
+Diseños personalizados para cada ocasión.
+</p>
+
+</div>
+
+
+</div>
 
 </section>
 
-      <!-- =========================
-           GALLERY
-      ========================== -->
 
-      <section id="gallery" class="reveal">
-        <div class="container">
-          <h2 id="galleryTitle" class="section-title"></h2>
 
-          <p id="gallerySubtitle" class="section-subtitle"></p>
 
-          <div class="mie-card">
-            <div class="swiper gallerySwiper">
-              <div id="galleryWrapper" class="swiper-wrapper"></div>
 
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- =========================
-           GIFT
-      ========================== -->
 
-      <section id="gift" class="reveal">
-        <div class="container">
-          <h2 id="giftTitle" class="section-title"></h2>
 
-          <div class="mie-card detail-card">
-            <p id="giftSubtitle"></p>
+<section class="home-contact">
 
-            <a id="giftButton" class="primary-button" target="_blank"></a>
-          </div>
-        </div>
-      </section>
 
-      <!-- =========================
-     EVENT FOOTER / CIERRE
-========================== -->
+<h2>
+¿Creamos tu invitación?
+</h2>
 
-      <section id="eventFooter" class="reveal">
-        <div class="container">
-          <div class="mie-card event-closing-card">
-            <span class="footer-icon" aria-hidden="true"> ✨ </span>
 
-            <h2>¡Te esperamos!</h2>
+<a
+class="primary-button"
+href="https://wa.me/50687051571"
+target="_blank">
 
-            <p>Gracias por ser parte de este día tan especial.</p>
+Contactar WhatsApp
 
-            <div class="event-footer-details">
-              <p id="eventFooterDate"></p>
+</a>
 
-              <p id="eventFooterTime"></p>
 
-              <a
-                id="calendarButton"
-                class="primary-button"
-                href="#"
-                download="evento.ics"
-              >
-                📅 Guardar en mi calendario
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+</section>
 
-      <!-- =========================
-     REAL FOOTER
-========================== -->
 
-      <footer class="reveal">
-        <div class="footer-content">
-          <p>Invitación realizada por</p>
 
-          <a
-            id="mandarinaLink"
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Mandarina Design
-          </a>
 
-          <span> Costa Rica </span>
-        </div>
-      </footer>
-    </div>
+<footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<p>
+Mandarina Design
+</p>
 
-    <script src="js/main.js"></script>
+<span>
+Costa Rica
+</span>
 
-    <audio id="bgMusic" loop></audio>
-  </body>
+</footer>
+
+
+
+</body>
+
 </html>

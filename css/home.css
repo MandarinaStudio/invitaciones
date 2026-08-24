@@ -1,0 +1,289 @@
+/* =========================
+   MANDARINA DESIGN
+   COZY ELEGANT STYLE
+========================= */
+
+body {
+  margin: 0;
+
+  background: #f8f1e7;
+
+  color: #3b2a22;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/* =========================
+   BODY TEXT
+========================= */
+
+
+
+/* =========================
+   HERO
+========================= */
+
+.home-hero {
+  min-height: 65vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  position: relative;
+
+  background:
+    linear-gradient(rgba(248, 241, 231, 0.2), rgba(248, 241, 231, 0.4)),
+    url("../assets/img/home-cover.jpg");
+
+  background-size: cover;
+
+  background-position: center 40%;
+}
+
+.home-overlay {
+  max-width: 750px;
+
+  padding: 25px;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.home-logo {
+  margin-bottom: 45px;
+}
+
+.home-logo img {
+  width: min(500px, 75vw);
+
+  height: auto;
+
+  margin: 0 auto;
+
+  display: block;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.home-hero h2 {
+  font-size: 2.4rem;
+
+  font-weight: 500;
+
+  letter-spacing: -0.5px;
+}
+
+.home-hero p, service-card p, .home-section p, .home-contact p {
+  font-size: 1.1rem;
+
+  font-weight: 300;
+margin:20px 0;
+  letter-spacing: 0.3px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.home-button {
+  display: inline-block;
+
+  margin-top: 30px;
+
+  padding: 15px 40px;
+
+  background: #d96b2b;
+
+  color: white;
+
+  text-decoration: none;
+
+  letter-spacing: 0.5px;
+
+  border-radius: 30px;
+
+  transition: 0.3s;
+}
+
+.home-button:hover {
+  background: #b95620;
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.home-section {
+  padding: 90px 20px;
+
+  text-align: center;
+}
+
+.home-hero h2,
+.home-section h2,
+.home-contact h2 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.home-section h2,
+.home-contact h2 {
+  font-size: 2.3rem;
+
+  font-weight: 400;
+
+  color: #3b2a22;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.service-grid {
+  max-width: 1100px;
+
+  margin: 50px auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 30px;
+}
+
+.service-card {
+  background: #fffaf3;
+
+  padding: 40px 30px;
+
+  border-radius: 18px;
+
+  border: 1px solid rgba(200, 155, 91, 0.35);
+
+  box-shadow: 0 10px 30px rgba(80, 50, 20, 0.08);
+}
+
+.service-card h3 {
+  color: #f48120;
+
+  font-weight: 700;
+}
+
+/* =========================
+   MIE SECTION
+========================= */
+
+.mie {
+  background: #fffaf3;
+}
+
+.mie li {
+  list-style: none;
+
+  margin: 18px;
+
+  color: #5b463b;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.home-contact {
+  padding: 90px 20px;
+background: #fef6ec;
+  text-align: center;
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  padding: 40px;
+
+  text-align: center;
+
+  color: #80695c;
+
+  background: #f1e4d4;
+}
+
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .home-hero {
+    min-height: 80vh;
+  }
+}
+
+
+/* =========================
+   HOME BUTTONS
+========================= */
+
+.primary-button,
+.home-secondary-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 15px 38px;
+
+  min-width: 190px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 0.95rem;
+
+  font-weight: 500;
+
+  letter-spacing: 0.4px;
+
+  transition: all 0.3s ease;
+  margin:25px 0;
+}
+
+/* Botón principal */
+
+.primary-button {
+  background: #f48120;
+
+  color: #fff;
+
+  border: 1px solid #d96b2b;
+}
+
+.primary-button:hover {
+  background: #bf5922;
+
+  transform: translateY(-3px);
+}
+
