@@ -12,10 +12,10 @@ async function loadInvitation() {
 
   try {
 
-    const response =
-      await fetch(
-        `invitations/${slug}/config/invitation.json`
-      );
+   const response =
+  await fetch(
+    `/invitations/${slug}/config/invitation.json`
+  );
 
     if (!response.ok) {
 
@@ -71,7 +71,7 @@ async function init() {
 
   const backgroundUrl =
     new URL(
-      `invitations/${slug}/img/${invitation.background}`,
+      `/invitations/${slug}/img/${invitation.background}`,
       window.location.href
     ).href;
 
@@ -102,7 +102,7 @@ async function init() {
 
       const imageUrl =
         new URL(
-          `invitations/${slug}/img/${image}`,
+          `/invitations/${slug}/img/${image}`,
           window.location.href
         ).href;
 
@@ -135,7 +135,7 @@ if(
 ){
 
     imageSection1.src =
-        `invitations/${slug}/img/${invitation.imageSections.image1}`;
+        `/invitations/${slug}/img/${invitation.imageSections.image1}`;
 
 }
 
@@ -146,7 +146,7 @@ if(
 ){
 
     imageSection2.src =
-        `invitations/${slug}/img/${invitation.imageSections.image2}`;
+        `/invitations/${slug}/img/${invitation.imageSections.image2}`;
 
 }
 
@@ -176,7 +176,7 @@ if(
   ) {
 
     envelopeImage.src =
-      `invitations/${slug}/img/${invitation.envelope}`;
+      `/invitations/${slug}/img/${invitation.envelope}`;
 
   }
 
@@ -226,7 +226,7 @@ if(
     );
 
   music.src =
-    `invitations/${slug}/audio/${invitation.music}`;
+    `/invitations/${slug}/audio/${invitation.music}`;
 
 
   // =========================
@@ -978,7 +978,7 @@ if (
       slide.innerHTML = `
 
         <img
-          src="invitations/${slug}/img/gallery/${image}"
+          src="/invitations/${slug}/img/gallery/${image}"
           loading="lazy"
           alt="Galería"
         >
