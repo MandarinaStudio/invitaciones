@@ -100,13 +100,11 @@
   "gift": {
     "enabled": true,
 
-    "title": "Mesa de Regalos",
+    "title": "Regalos",
 
-    "subtitle": "Tu presencia es nuestro mejor regalo, pero si deseas tener un detalle con nosotros puedes hacerlo aquí.",
+    "subtitle": "Tu presencia es nuestro mejor regalo, pero si deseas tener un detalle puedes hacernos un SINPE Móvil al 87917893 (Número de Andrea) o traernos un sobre con efectivo"
 
-    "buttonText": "Ver opciones",
-
-    "url": "https://www.amazon.com/"
+    
   },
 
   "imageSections": {

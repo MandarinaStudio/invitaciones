@@ -264,29 +264,43 @@ if(
     invitation.dressCode.description;
 
 
-  // =========================
-  // GIFT
-  // =========================
+// =========================
+// GIFT
+// =========================
 
-  document.getElementById(
-    "giftTitle"
-  ).textContent =
-    invitation.gift.title;
+document.getElementById(
+  "giftTitle"
+).textContent =
+  invitation.gift.title;
 
-  document.getElementById(
-    "giftSubtitle"
-  ).textContent =
-    invitation.gift.subtitle;
 
-  document.getElementById(
-    "giftButton"
-  ).textContent =
+document.getElementById(
+  "giftSubtitle"
+).textContent =
+  invitation.gift.subtitle;
+
+
+const giftButton =
+  document.getElementById("giftButton");
+
+
+if (
+  invitation.gift.buttonText &&
+  invitation.gift.url
+) {
+
+  giftButton.textContent =
     invitation.gift.buttonText;
 
-  document.getElementById(
-    "giftButton"
-  ).href =
+  giftButton.href =
     invitation.gift.url;
+
+} else {
+
+  giftButton.style.display =
+    "none";
+
+}
 
 
   // =========================
