@@ -1,13 +1,23 @@
 {
   "theme": "gothic",
-  "title": "¿Hola",
+
+  "title": "Quieaños de Andrea Abarca Rodríguez",
+
   "welcomeTitle": "¡Sigue al conejo blanco!",
+
   "heroTitle": "¿Quieres acompañarme a una fiesta de no-cumpleaños?",
+
   "subtitle": "17 de Octubre • 2:00 PM",
 
-  "hero": "hero.webp",
+
+
+  "envelope": "envelope.png",
+
   "background": "background.png",
+
   "sectionBackgrounds": {
+    "welcome": "cover.jpg",
+    "hero": "hero.webp",
     "story": "story.jpg",
     "details": "story.jpg",
     "dressCode": "story.jpg",
@@ -17,38 +27,55 @@
     "gift": "story.jpg",
     "eventFooter": "story.jpg"
   },
+
+
+  
   "music": "music.mp3",
+
   "eventDate": "2026-10-17T14:00:00",
 
-  "story":{
-
+  "story": {
     "enabled": true,
 
-    "title":"Andrea Abarca Rodríguez",
+    "subtitle": "Es el quinceaños de:",
 
-    "text":"Te invita a celebrar juntos este día tan especial, con una fiesta de no-cumpleaños al estilo de Alicia en el País de las Maravillas. Ven y acompáñala en el inicio de una nueva etapa de mi vida."
+    "title": "Andrea Abarca Rodríguez",
 
-},
+    "text": "Y te invitamos a celebrar juntos este día tan especial, con una fiesta de no-cumpleaños al estilo de Alicia en el País de las Maravillas. Ven y acompáñanos en el inicio de una nueva etapa de su vida."
+  },
 
   "venue": {
     "name": "Finca Sanchez",
+
     "address": "Platanares, Moravia",
+
     "maps": "https://ul.waze.com/ul?ll=10.00311711%2C-84.00749445&navigate=yes&zoom=17&utm_campaign=waze_website&utm_source=waze_website&utm_medium=lm_share_location"
   },
+
   "dressCode": {
     "title": "Semiformal",
+
     "description": "Te esperamos con tu mejor atuendo para celebrar juntos este día, puede ser alusivo al mundo de Alicia en el Pais de las Maravillas, colores rojo, negro y blanco."
   },
+
   "showActivities": false,
-  "activities": ["Inflable", "Pintacaritas", "Pizza", "Piñata", "Pastel"],
+
+  "activities": [
+    "Inflable",
+    "Pintacaritas",
+    "Pizza",
+    "Piñata",
+    "Pastel"
+  ],
 
   "rsvp": {
-    "phone": "50688888888",
+    "phone": "50683604615",
 
     "message": "¡Hola! Confirmo mi asistencia al cumpleaños."
   },
+
   "gallery": {
-    "enabled": true,
+    "enabled": false,
 
     "title": "Momentos especiales",
 
@@ -57,16 +84,37 @@
     "autoplay": true,
 
     "delay": 3500,
+
     "layout": "portrait",
+
     "loop": true,
 
-    "images": ["gallery1.jpg", "gallery2.jpg", "gallery3.jpg", "gallery4.jpg"]
+    "images": [
+      "gallery1.jpg",
+      "gallery2.jpg",
+      "gallery3.jpg",
+      "gallery4.jpg"
+    ]
   },
+
   "gift": {
     "enabled": true,
+
     "title": "Mesa de Regalos",
+
     "subtitle": "Tu presencia es nuestro mejor regalo, pero si deseas tener un detalle con nosotros puedes hacerlo aquí.",
+
     "buttonText": "Ver opciones",
+
     "url": "https://www.amazon.com/"
-}
+  },
+
+  "imageSections": {
+    "image1": "image1.jpg",
+    "image2": "image2.jpg"
+  }
+
+
+
+  
 }

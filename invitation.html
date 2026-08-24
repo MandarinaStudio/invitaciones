@@ -6,21 +6,27 @@
 
     <title>MIE - Mandarina Invites Engine</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/layout.css" />
@@ -32,18 +38,34 @@
 
   <body>
     <div id="pageBackground"></div>
+
     <div id="decorations"></div>
+
     <div id="app">
+      <!-- =========================
+           WELCOME
+      ========================== -->
+
       <section id="welcome">
         <div class="overlay">
-         
           <h1 id="eventTitle">Cargando...</h1>
- <div id="welcomeEnvelope" class="envelope-container" aria-hidden="true">     
-  <button id="enterButton">Abrir invitación</button>
-</div>
-     
+
+          <div id="welcomeEnvelope" class="envelope-container">
+            <img
+              id="welcomeEnvelopeImage"
+              class="welcome-envelope"
+              alt=""
+              aria-hidden="true"
+            />
+
+            <button id="enterButton">Abrir invitación</button>
+          </div>
         </div>
       </section>
+
+      <!-- =========================
+           HERO
+      ========================== -->
 
       <section id="hero">
         <button id="musicButton" class="music-button">🔊</button>
@@ -56,25 +78,21 @@
           <section class="countdown">
             <div class="countdown-item">
               <span id="days">00</span>
-
               <small>Días</small>
             </div>
 
             <div class="countdown-item">
               <span id="hours">00</span>
-
               <small>Horas</small>
             </div>
 
             <div class="countdown-item">
               <span id="minutes">00</span>
-
               <small>Minutos</small>
             </div>
 
             <div class="countdown-item">
               <span id="seconds">00</span>
-
               <small>Segundos</small>
             </div>
           </section>
@@ -82,23 +100,41 @@
           <div class="scroll-indicator">↓</div>
         </div>
       </section>
-<section id="story" class="reveal">
 
-    <div class="container">
+      <!-- =========================
+           STORY
+      ========================== -->
 
-        <div class="story-card">
-
-            <span class="story-icon">♥️♣️♦️♠️</span>
+      <section id="story" class="reveal">
+        <div class="container">
+          <div class="story-card">
+            <span class="story-icon"> ♥️♣️♦️♠️ </span>
+            <p id="storySubtitle"></p>
 
             <h2 id="storyTitle"></h2>
 
             <p id="storyText"></p>
-
+          </div>
         </div>
+      </section>
 
-    </div>
+      <!-- =========================
+           image 1
+      ========================== -->
+
+   <section id="image1" class="image-section reveal">
+
+  <img
+    id="imageSection1"
+    alt="Imagen decorativa"
+  />
 
 </section>
+
+      <!-- =========================
+           DETAILS
+      ========================== -->
+
       <section id="details" class="reveal">
         <div class="container">
           <h2>Lugar del Evento</h2>
@@ -114,6 +150,11 @@
           </div>
         </div>
       </section>
+
+      <!-- =========================
+           DRESS CODE
+      ========================== -->
+
       <section id="dressCode" class="reveal">
         <div class="container">
           <h2>Dress Code</h2>
@@ -125,6 +166,11 @@
           </div>
         </div>
       </section>
+
+      <!-- =========================
+           ACTIVITIES
+      ========================== -->
+
       <section id="activities" class="reveal">
         <div class="container">
           <h2 class="section-title">¡Diversión garantizada!</h2>
@@ -134,6 +180,11 @@
           </div>
         </div>
       </section>
+
+      <!-- =========================
+           RSVP
+      ========================== -->
+
       <section id="rsvp" class="reveal">
         <div class="container">
           <h2 class="section-title">Confirma tu asistencia</h2>
@@ -149,6 +200,24 @@
           </div>
         </div>
       </section>
+
+      <!-- =========================
+           image 2
+      ========================== -->
+
+  <section id="image2" class="image-section reveal">
+
+  <img
+    id="imageSection2"
+    alt="Imagen decorativa"
+  />
+
+</section>
+
+      <!-- =========================
+           GALLERY
+      ========================== -->
+
       <section id="gallery" class="reveal">
         <div class="container">
           <h2 id="galleryTitle" class="section-title"></h2>
@@ -164,38 +233,80 @@
           </div>
         </div>
       </section>
+
+      <!-- =========================
+           GIFT
+      ========================== -->
+
       <section id="gift" class="reveal">
+        <div class="container">
+          <h2 id="giftTitle" class="section-title"></h2>
 
-    <div class="container">
-
-        <h2 id="giftTitle" class="section-title"></h2>
-
-        <div class="mie-card detail-card">
-
+          <div class="mie-card detail-card">
             <p id="giftSubtitle"></p>
 
-            <a
-                id="giftButton"
-                class="primary-button"
-                target="_blank">
-
-            </a>
-
+            <a id="giftButton" class="primary-button" target="_blank"></a>
+          </div>
         </div>
+      </section>
 
-    </div>
+      <!-- =========================
+     EVENT FOOTER / CIERRE
+========================== -->
 
-</section>
-      <footer id="eventFooter" class="reveal">
+      <section id="eventFooter" class="reveal">
+        <div class="container">
+          <div class="mie-card event-closing-card">
+            <span class="footer-icon" aria-hidden="true"> ✨ </span>
+
+            <h2>¡Te esperamos!</h2>
+
+            <p>Gracias por ser parte de este día tan especial.</p>
+
+            <div class="event-footer-details">
+              <p id="eventFooterDate"></p>
+
+              <p id="eventFooterTime"></p>
+
+              <a
+                id="calendarButton"
+                class="primary-button"
+                href="#"
+                download="evento.ics"
+              >
+                📅 Guardar en mi calendario
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+     REAL FOOTER
+========================== -->
+
+      <footer class="reveal">
         <div class="footer-content">
-          <span class="footer-icon" aria-hidden="true">✨</span>
-          <h2>¡Te esperamos!</h2>
-          <p>Gracias por ser parte de este día tan especial.</p>
+          <p>Invitación realizada por</p>
+
+          <a
+            id="mandarinaLink"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mandarina Design
+          </a>
+
+          <span> Costa Rica </span>
         </div>
       </footer>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="js/main.js"></script>
+
     <audio id="bgMusic" loop></audio>
   </body>
 </html>

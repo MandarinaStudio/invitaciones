@@ -26,7 +26,7 @@ SECCIONES
     position: relative;
     isolation: isolate;
     background-color: #fdf7ef;
-    background-image: linear-gradient(rgba(29, 24, 18, 0.40), rgba(3, 3, 3, 0.20)), var(--section-background, none);
+    background-image: linear-gradient(rgba(29, 24, 18, 0.0), rgba(3, 3, 3, 0.0)), var(--section-background, none);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,18 +35,18 @@ SECCIONES
 #story,
 #activities,
 #gallery {
-    background-image:  linear-gradient(rgba(29, 24, 18, 0.40), rgba(3, 3, 3, 0.20)), var(--section-background, none);
+    background-image:  linear-gradient(rgba(29, 24, 18, 0.0), rgba(3, 3, 3, 0.0)), var(--section-background, none);
 }
 
 #details,
 #rsvp {
-    background-image:  linear-gradient(rgba(29, 24, 18, 0.40), rgba(3, 3, 3, 0.20)), var(--section-background, none);
+    background-image:  linear-gradient(rgba(29, 24, 18, 0.0), rgba(3, 3, 3, 0.0)), var(--section-background, none);
 }
 
 #dressCode,
 #gift,
 #eventFooter {
-    background-image:  linear-gradient(rgba(29, 24, 18, 0.40), rgba(3, 3, 3, 0.20)), var(--section-background, none);
+    background-image:  linear-gradient(rgba(29, 24, 18, 0.0), rgba(3, 3, 3, 0.0)), var(--section-background, none);
 }
 
 /*==================================
@@ -481,3 +481,5 @@ CIERRE
     line-height: 1.7;
 
 }
+
+
