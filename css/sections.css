@@ -243,11 +243,35 @@ RSVP
 
 }
 
-#rsvpButton{
+#rsvpButton, #mapsButton, #calendarButton{
 
     display:block;
 
     margin:auto;
+
+}
+
+@media (min-width: 768px) {
+
+  #rsvpButton, #mapsButton, #calendarButton{
+width:70%;
+    display:block;
+
+    margin:auto;
+}
+
+
+}
+
+@media (max-width: 768px) {
+
+  #rsvpButton, #mapsButton, #calendarButton{
+width:100%;
+    display:block;
+
+    margin:auto;
+
+}
 
 }
 

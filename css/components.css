@@ -128,6 +128,7 @@ body[data-theme="gothic"] .section-title,
 body[data-theme="gothic"] #details h2,
 body[data-theme="gothic"] #dressCode h2,
 body[data-theme="gothic"] .story-card h2,
+body[data-theme="gothic"] .activities h2,
 body[data-theme="gothic"] #giftTitle,
 body[data-theme="gothic"] .footer-content h2 {
 
@@ -153,6 +154,7 @@ body[data-theme="gothic"] .section-title,
 body[data-theme="gothic"] #details h2,
 body[data-theme="gothic"] #dressCode h2,
 body[data-theme="gothic"] .story-card h2,
+body[data-theme="gothic"] .activities h2,
 body[data-theme="gothic"] #giftTitle,
 body[data-theme="gothic"] .footer-content h2 {
 
@@ -447,16 +449,12 @@ LAYOUT
 }
 
 
-#details h2,
-#dressCode h2,
-#activities h2,
-.section-title {
+
+ h2 .section-title {
 
   text-align: center;
 
   margin-bottom: 50px;
-
-  font-size: 2rem;
 
   color: #5b4335;
 }

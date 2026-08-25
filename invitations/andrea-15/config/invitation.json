@@ -1,15 +1,13 @@
 {
   "theme": "gothic",
 
-  "title": "Quieaños de Andrea Abarca Rodríguez",
+  "title": "Quinceaños de Andrea Abarca Rodríguez",
 
-  "welcomeTitle": "¡Sigue al conejo blanco!",
+  "welcomeTitle": "¡Tienes un mensaje!",
 
   "heroTitle": "¿Quieres acompañarme a una fiesta de no-cumpleaños?",
 
   "subtitle": "17 de Octubre • 2:00 PM",
-
-
 
   "envelope": "envelope.png",
 
@@ -28,15 +26,11 @@
     "eventFooter": "story.jpg"
   },
 
-
-  
   "music": "music.mp3",
 
   "eventDate": "2026-10-17T14:00:00",
 
   "story": {
-    "enabled": true,
-
     "subtitle": "Es el quinceaños de:",
 
     "title": "Andrea Abarca Rodríguez",
@@ -45,6 +39,8 @@
   },
 
   "venue": {
+    "enabled": true,
+    "sectionTitle": "Lugar del Evento",
     "name": "Finca Sanchez",
 
     "address": "Platanares, Moravia",
@@ -53,22 +49,23 @@
   },
 
   "dressCode": {
+    "enabled": true,
+    "sectionTitle": "Dress Code",
     "title": "Semiformal",
 
     "description": "Te esperamos con tu mejor atuendo para celebrar juntos este día, puede ser alusivo al mundo de Alicia en el Pais de las Maravillas, colores rojo, negro y blanco."
   },
 
-  "showActivities": false,
+  "activities": {
+    "enabled": false,
+    "sectionTitle": "¡Diversión garantizada!",
 
-  "activities": [
-    "Inflable",
-    "Pintacaritas",
-    "Pizza",
-    "Piñata",
-    "Pastel"
-  ],
+    "items": ["Inflable", "Pintacaritas", "Pizza", "Piñata", "Pastel"]
+  },
 
   "rsvp": {
+    "enabled": true,
+    "sectionTitle": "Confirma tu asistencia",
     "phone": "50683604615",
 
     "message": "¡Hola! Confirmo mi asistencia al cumpleaños."
@@ -76,9 +73,7 @@
 
   "gallery": {
     "enabled": false,
-
-    "title": "Momentos especiales",
-
+    "sectionTitle": "Momentos especiales",
     "subtitle": "Así hemos disfrutado juntos.",
 
     "autoplay": true,
@@ -89,30 +84,24 @@
 
     "loop": true,
 
-    "images": [
-      "gallery1.jpg",
-      "gallery2.jpg",
-      "gallery3.jpg",
-      "gallery4.jpg"
-    ]
+    "images": ["gallery1.jpg", "gallery2.jpg", "gallery3.jpg", "gallery4.jpg"]
   },
 
   "gift": {
     "enabled": true,
+    "sectionTitle": "Regalitos",
+    "subtitle": "Tu presencia es nuestro mejor regalo, pero si deseas tener un detalle puedes hacernos un SINPE Móvil al 87917893 (Número de Andrea) o traernos un sobre con efectivo."
+  },
 
-    "title": "Regalos",
+  "eventFooter": {
+    "enabled": true,
+    "sectionTitle": "¡Te esperamos!",
 
-    "subtitle": "Tu presencia es nuestro mejor regalo, pero si deseas tener un detalle puedes hacernos un SINPE Móvil al 87917893 (Número de Andrea) o traernos un sobre con efectivo"
-
-    
+    "subtitle": "Gracias por ser parte de este día tan especial."
   },
 
   "imageSections": {
     "image1": "image1.jpg",
     "image2": "image2.jpg"
   }
-
-
-
-  
 }

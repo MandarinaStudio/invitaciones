@@ -122,14 +122,9 @@
            image 1
       ========================== -->
 
-   <section id="image1" class="image-section reveal">
-
-  <img
-    id="imageSection1"
-    alt="Imagen decorativa"
-  />
-
-</section>
+      <section id="image1" class="image-section reveal">
+        <img id="imageSection1" alt="Imagen decorativa" />
+      </section>
 
       <!-- =========================
            DETAILS
@@ -137,7 +132,7 @@
 
       <section id="details" class="reveal">
         <div class="container">
-          <h2>Lugar del Evento</h2>
+          <h2 id="detailsTitle" class="section-title"></h2>
 
           <div class="detail-card mie-card">
             <h3 id="venueName"></h3>
@@ -157,7 +152,7 @@
 
       <section id="dressCode" class="reveal">
         <div class="container">
-          <h2>Dress Code</h2>
+          <h2 id="dressCodeTitle" class="section-title"></h2>
 
           <div class="detail-card mie-card">
             <h3 id="dressTitle"></h3>
@@ -173,7 +168,7 @@
 
       <section id="activities" class="reveal">
         <div class="container">
-          <h2 class="section-title">¡Diversión garantizada!</h2>
+          <h2 id="activitiesTitle" class="section-title"></h2>
 
           <div class="mie-card">
             <div id="activitiesGrid" class="activities-grid"></div>
@@ -187,7 +182,7 @@
 
       <section id="rsvp" class="reveal">
         <div class="container">
-          <h2 class="section-title">Confirma tu asistencia</h2>
+          <h2 id="rsvpTitle" class="section-title"></h2>
 
           <div class="mie-card">
             <p class="rsvp-text">
@@ -205,14 +200,9 @@
            image 2
       ========================== -->
 
-  <section id="image2" class="image-section reveal">
-
-  <img
-    id="imageSection2"
-    alt="Imagen decorativa"
-  />
-
-</section>
+      <section id="image2" class="image-section reveal">
+        <img id="imageSection2" alt="Imagen decorativa" />
+      </section>
 
       <!-- =========================
            GALLERY
@@ -259,9 +249,9 @@
           <div class="mie-card event-closing-card">
             <span class="footer-icon" aria-hidden="true"> ✨ </span>
 
-            <h2>¡Te esperamos!</h2>
+            <h2 id="eventFooterTitle" class="section-title"></h2>
 
-            <p>Gracias por ser parte de este día tan especial.</p>
+      <p id="eventFooterSubtitle"></p>
 
             <div class="event-footer-details">
               <p id="eventFooterDate"></p>
@@ -305,7 +295,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script src="../../js/main.js"></script>
+    <script src="../../js/main.js"></script>
 
     <audio id="bgMusic" loop></audio>
   </body>
